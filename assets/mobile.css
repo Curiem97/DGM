@@ -1,0 +1,30 @@
+/* Begin Mobile */
+.show-mobile { display: none; }
+
+@media only screen and (max-width: 768px) and (max-height: 414px){
+	.show-tablet { display: none !important; }
+
+	.show-mobile { display: flex; }
+}
+
+@media only screen and (max-width: 533px) {
+	#events .show-tablet { display: flex; }
+
+	#week-artist .show-tablet { display: none !important; }
+	.show-mobile { display: block; }
+	.slider__content img {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	#week-artist .social-icons {
+		margin-top: 50px;
+	}
+	.artist {
+		position: absolute;
+		bottom: -40px;
+		width: 80px !important;
+	}
+
+	
+}
+/* End Mobile */

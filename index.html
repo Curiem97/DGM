@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="author" content="Margarida Pedrosa, Mariana Soares">
+        <meta name="description" content="Site sobre o curso">
+        <meta name="keywords" content="Caldas da Rainha, ESAD, ESAD.cr, Curso, Curso Site, Responsive Site, Design Gráfico e Multimédia">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+        <!-- Page Title -->
+        <title>Design Gráfico e Multimédia</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="favicon.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/main.css">
+        <link rel="stylesheet" href="assets/tablet.css">
+        <link rel="stylesheet" href="assets/mobile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="mw">
+                <input type="checkbox" id="chkToggle"></input>
+                <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <div class="sidebar">
+                    <ul class="main-nav" id="js-menu">
+                        <li><a rel="#">Home</a></li>
+                        <li><a rel="#events">Eventos</a></li>
+                        <li><a rel="#week-artist">Artista</a></li>
+                        <li><a rel="#course">Curso</a></li>
+                        <li><a rel="#works">Trabalhos</a></li>
+                        <li><a rel="#info">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="mw">
+                <h1>Design <br> Gráfico <br> e Multimédia</h1>
+                <h2>ESAD.CR</h2>
+            </div>
+            <a id="arrow" class="ca3-scroll-down-link ca3-scroll-down-arrow">
+                <img src="assets/img/arrow-down-100.png">
+            </a>
+        </header>
+        <main class="mw">
+            <section id="events">
+                <h2>Eventos</h2>
+                <div class="flex hide">
+                    <div class="col-3">
+                        <img src="assets/img/eventos1.jpg" alt="" class="default-img">
+                        <p>
+                            Caldas da Rainha
+                            21/09 a 05/10
+                            Exposições das interpretações
+                            da natureza.
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/img/eventos2.jpg" alt="" class="default-img">
+                        <p>
+                            Pedrógão Pequeno
+                            08/11/19
+                            Encontro Nacional de Estudantes
+                            de Cultura e Eventos.
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/img/eventos3.jpg" alt="" class="default-img">
+                        <p>
+                            Caldas da Rainha
+                            25/11/2019
+                            Conferência e conversa 
+                            com Cecília Costa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Begin Tablet -->
+                <div class="show-tablet slider">
+                    <div class="flex nav__slider">
+                        <input type="radio" name="events" data-type="events" data-event="events1" title="slide1" checked="checked" class="slider__nav"/>
+                        <input type="radio" name="events" data-type="events" data-event="events2" title="slide3" class="slider__nav"/>
+                        <input type="radio" name="events" data-type="events" data-event="events3" title="slide2" class="slider__nav"/>
+                    </div>
+                    <div class="slider__inner">
+                        <div class="slider__content">
+                            <img id="events__img" src="assets/img/eventos1.jpg" alt="" class="default-img">
+                            <p id="events__caption">
+                                Caldas da Rainha
+                                21/09 a 05/10
+                                Exposições das intrepertações
+                                da natureza.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Tablet -->
+            </section>
+            <section id="week-artist">
+                <h2>Artista da Semana</h2>
+                <div class="flex hide">
+                    <div id="artist" class="col-3">
+                        <img src="assets/img/persona.png">
+                        <p>
+                            Miguel Nunes, estuda design 
+                            multimédia no 3º ano e é o 
+                            escolhido desta semana.
+                            Sigam-no nas redes sociais.
+                        </p>
+                        <div class="flex social-icons">
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/facebook.png"></a></div>
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/youtube.png"></a></div>
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/instagram.png"></a></div>
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/behance.png"></a></div>
+                        </div>
+                    </div>
+                    <div class="col-3 artist-works">
+                        <img src="assets/img/artistadasemana1.jpg">
+                    </div>
+                    <div class="col-3 artist-works">
+                        <img src="assets/img/artistadasemana2.jpg">
+                    </div>
+                </div>
+
+                <!-- Begin Tablet -->
+                <div class="show-tablet">
+                    <div class="slider">
+                        <div class="flex nav__slider">
+                            <input type="radio" name="artist" data-type="artist" data-artist="artist1" title="slide1" checked="checked" class="slider__nav"/>
+                            <input type="radio" name="artist" data-type="artist" data-artist="artist2" title="slide2" class="slider__nav"/>
+                        </div>
+                        <div class="slider__inner">
+                            <div class="slider__content">
+                                <img src="assets/img/artistadasemana1.jpg" alt="" class="default-img artist__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-center social-icons">
+                        <div class="col-4"><a href="#" target="_blank"><img src="assets/img/facebook.png"></a></div>
+                        <div class="col-4"><a href="#" target="_blank"><img src="assets/img/youtube.png"></a></div>
+                        <div class="col-4"><a href="#" target="_blank"><img src="assets/img/instagram.png"></a></div>
+                        <div class="col-4"><a href="#" target="_blank"><img src="assets/img/behance.png"></a></div>
+                    </div>
+                    <div class="flex flex-center">
+                        <div class="col-2 center">
+                            <img src="assets/img/persona.png" class="default-img artist">
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                Miguel Nunes, estuda design 
+                                multimédia no 3º ano e é o 
+                                escolhido desta semana.
+                                Sigam-no nas redes sociais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Tablet -->
+
+                <!-- Begin Mobile -->
+                <div class="show-mobile">
+                    <div class="slider">
+                        <div class="flex nav__slider">
+                            <input type="radio" name="artist" data-type="artist" data-artist="artist1" title="slide1" checked="checked" class="slider__nav"/>
+                            <input type="radio" name="artist" data-type="artist" data-artist="artist2" title="slide2" class="slider__nav"/>
+                        </div>
+                        <div class="slider__inner">
+                            <div class="slider__content">
+                                <img src="assets/img/artistadasemana1.jpg" alt="" class="default-img artist__img">
+                                <img src="assets/img/persona.png" class="default-img artist">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-center">
+                        <p>
+                            Miguel Nunes, estuda design 
+                            multimédia no 3º ano e é o 
+                            escolhido desta semana.
+                            Sigam-no nas redes sociais.
+                        </p>
+                    </div>
+                    <div class="flex social-icons">
+                        <div class="col-4"><a href="#" target="_blank"><img src="assets/img/facebook.png"></a></div>
+                        <div class="col-4"><a href="#" target="_blank"><img src="assets/img/youtube.png"></a></div>
+                        <div class="col-4"><a href="#" target="_blank"><img src="assets/img/instagram.png"></a></div>
+                        <div class="col-4"><a href="#" target="_blank"><img src="assets/img/behance.png"></a></div>
+                    </div>
+                </div>
+            </section>
+            <section id="course">
+                <h2>Curso</h2>
+                <p>
+                    O curso de design gráfico tem como função a dar a conhecer aos alunos diversas
+                    técnicas, matérias, e a criar uma outra visão sobre o design gráfico especifíco no curso, e ajudar a 
+                    criar conteúdos variantes do mesmo.
+                    A partir do segundo ano é dada a oportunidade de escolher um ramo ou gráfico ou multimédia.
+                    Onde depois é aprofundado os conhecimentos da opção escolhida.
+                </p>
+             
+                <p id="course-more-info">
+                    Para mais informações: <br>
+                    <a href="https://www.ipleiria.pt/cursos/course/licenciatura-em-design-grafico-e-multimedia/" target="_blank">
+                        https://www.ipleiria.pt/cursos/course/licenciatura-em-design-grafico-e-multimedia/
+                    </a>
+                </p>
+            </section>
+            <section id="works">
+                <h2>Trabalhos</h2>
+                <div class="flex hide">
+                    <div class="col-3"><img src="assets/img/trabalhos2.jpg" alt=""></div>
+                    <div class="col-3 works-info">
+                        <div id="work-1">
+                            <p>
+                                Maria Fernades <br>
+                                2º ano Design gráfico <br>
+                                Trabalho feito para projecto Design gráfico I.
+                            </p>
+                        </div>
+                        <div id="work-2" class="flex">
+                            <p> 
+                                Ricardo Lisa <br>
+                                1º ano DGM <br>
+                                Trabalho feito para Projeto comunicação I.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-3"><img src="assets/img/trabalhos1.jpg" alt=""></div>
+                </div>
+                <div class="flex hide">
+                    <div class="col-3">
+                        <div class="flex social-icons">
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/facebook.png"></a></div>
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/youtube.png"></a></div>
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/instagram.png"></a></div>
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/behance.png"></a></div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                        <div class="flex social-icons">
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/facebook.png"></a></div>
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/youtube.png"></a></div>
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/instagram.png"></a></div>
+                            <div class="col-4"><a href="#" target="_blank"><img src="assets/img/behance.png"></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Begin Tablet -->
+                <div class="show-tablet">
+                    <div class="slider">
+                        <div class="flex nav__slider">
+                            <input type="radio" name="work" data-type="works" data-work="work1" title="slide1" checked="checked" class="slider__nav"/>
+                            <input type="radio" name="work" data-type="works" data-work="work2" title="slide2" class="slider__nav"/>
+                        </div>
+                        <div class="slider__inner">
+                            <div class="slider__content">
+                                <img id="works__img" src="assets/img/trabalhos2.jpg" alt="" class="default-img">
+                                <p id="works__caption">
+                                    Maria Fernades
+                                    2º ano design gráfico
+                                    Trabalho feito para projecto Design gráfico I.
+                                </p>
+                            </div>
+                            <div class="flex social-icons">
+                                <div class="col-4"><a href="#" target="_blank"><img src="assets/img/facebook.png"></a></div>
+                                <div class="col-4"><a href="#" target="_blank"><img src="assets/img/youtube.png"></a></div>
+                                <div class="col-4"><a href="#" target="_blank"><img src="assets/img/instagram.png"></a></div>
+                                <div class="col-4"><a href="#" target="_blank"><img src="assets/img/behance.png"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Tablet -->
+
+            </section>
+            <section id="years">
+                <h2>30 anos</h2>
+                <p>
+                    A ESAD.CR em 2020 completa 30 anos e para comemorar todos os futuros eventos e atividades vão estar disponíveis em breve nesta secção.
+                </p>
+                <p>
+                    Em breve mais informações.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <h2>Contactos</h2>
+            <p>Telefone: <a href="tel:262830900">(+351) 262830900</a></p>
+            <p>E-mail: <a href="mailto:esadesad@ipleiria.pt">esadesad.ipleiria.pt</a></p>
+            <p>Morada: Rua Isidoro Inácio Alves de Carvalho</p>
+            <p>2500-321, Caldas da Rainha - Portugal</p>
+        </footer>
+    </body>
+</html>
